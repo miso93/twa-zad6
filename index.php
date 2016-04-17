@@ -171,7 +171,7 @@ require_once "function.php" ?>
     <div class="row">
         <h2>na základe zadaného dátumu získať informáciu, kto má v daný deň meniny na Slovensku, resp. v niektorom inom
             uvedenom štáte</h2>
-        <form id="form-get-name-day" class="form form-horizontal" action="/server/calendar?apiFunction=getByDate">
+        <form id="form-get-name-day" class="form form-horizontal" action="http://147.175.99.99/twa-zad6/server/calendar?apiFunction=getByDate">
             <div class="form-group">
                 <div class="col-sm-3">
                     <input class="form-control" type="text" name="den" placeholder="Zadaj deň"
@@ -194,7 +194,7 @@ require_once "function.php" ?>
     <div class="row">
         <h2>na základe uvedeného mena a štátu získať informáciu, kedy má osoba s týmto menom meniny v danom štáte</h2>
         <form id="form-get-date-by-country-and-name" class="form form-horizontal"
-              action="/server/calendar?apiFunction=getDateByNameAndCountry">
+              action="http://147.175.99.99/twa-zad6/server/calendar?apiFunction=getDateByNameAndCountry">
             <div class="form-group">
                 <div class="col-sm-3">
                     <input class="form-control" type="text" name="name" placeholder="Zadaj meno" value="">
@@ -224,7 +224,7 @@ require_once "function.php" ?>
         <h2>získať zoznam všetkých sviatkov na Slovensku/V Čechách (element SKsviatky/CZsviatky) spolu s dňom, na ktorý
             tieto sviatky pripadajú</h2>
         <form id="form-get-holiday-by-country" class="form form-horizontal"
-              action="/server/calendar?apiFunction=getHolidaysByCountry">
+              action="http://147.175.99.99/twa-zad6/server/calendar?apiFunction=getHolidaysByCountry">
             <div class="form-group">
                 <div class="col-sm-3">
                     <select name="country" class="form-control">
@@ -252,7 +252,7 @@ require_once "function.php" ?>
         <h2>získať zoznam všetkých pamätných dní na Slovensku (element SKdni) spolu s dňom, na ktorý tieto dni
             pripadajú</h2>
         <form id="form-get-memory-day-by-country" class="form form-horizontal"
-              action="/server/calendar?apiFunction=getMemoryDays">
+              action="http://147.175.99.99/twa-zad6/server/calendar?apiFunction=getMemoryDays">
             <div class="form-group">
                 <input type="hidden" value="SK" name="country">
                 <div class="col-sm-1 control-label">Output</div>
@@ -272,7 +272,7 @@ require_once "function.php" ?>
     <div class="row">
         <h2>vložiť nové meno do kalendára (element SKd) k určitému dňu</h2>
         <form id="form-post-resource" class="form form-horizontal" method="post"
-              action="/server/calendar">
+              action="http://147.175.99.99/twa-zad6/server/calendar">
             <div class="col-md-12">
                 <div class="form-group">
                     <label for="resource">Resource</label>
